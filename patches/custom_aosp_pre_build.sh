@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-aosp_pre_build() {
+custom_aosp_pre_build() {
   log_header "${FUNCNAME[0]}"
 
   local product_makefile="${AOSP_BUILD_DIR}/device/google/${DEVICE_FAMILY}/aosp_${DEVICE}.mk"
