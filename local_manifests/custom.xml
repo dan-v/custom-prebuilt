@@ -6,6 +6,9 @@
   <!-- this custom repo -->
   <project path="vendor/custom" name="custom" remote="dan-v" />
 
+  <!-- microg -->
+  <project path="platform/prebuilts/microg" name="microg" remote="rattlesnakeos" clone-depth="1" />
+
   <!-- grapheneos additions -->
   <project path="external/vanadium" name="platform_external_vanadium" remote="grapheneos" clone-depth="1" />
   <remove-project name="platform/external/chromium-webview" />
