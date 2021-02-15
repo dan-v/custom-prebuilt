@@ -10,9 +10,9 @@
   <project path="platform/prebuilts/microg" name="microg" remote="rattlesnakeos" clone-depth="1" />
 
   <!-- vanadium prebuilt -->
-  <!-- <project path="external/vanadium" name="platform_external_vanadium" remote="grapheneos" clone-depth="1" />
+  <project path="external/vanadium" name="platform_external_vanadium" remote="grapheneos" clone-depth="1" />
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/packages/apps/Browser2" />
-  <remove-project name="platform/packages/apps/QuickSearchBox" /> -->
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
 
 </manifest>
