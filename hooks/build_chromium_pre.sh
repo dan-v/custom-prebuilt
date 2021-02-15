@@ -3,7 +3,8 @@
 # if building chromium, apply patches prior to chromium build
 if [ "${CHROMIUM_BUILD_DISABLED}" == "false" ]; then
     log "applying vanadium patches"
-    git clone https://github.com/GrapheneOS/Vanadium.git "${ROOT_DIR}/vanadium"
+    vanadium_dir="${ROOT_DIR}/vanadium"
+    git clone https://github.com/GrapheneOS/Vanadium.git "${vanadium_dir}"
     cd "${CHROMIUM_BUILD_DIR}/src"
-    git am --whitespace=nowarn ${ROOT_DIR}/vanadium/patches/*.patch
+    git am --whitespace=nowarn ${vanadium_dir}/patches/*.patch
 fi
